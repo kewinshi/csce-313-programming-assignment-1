@@ -75,9 +75,7 @@ int main (int argc, char *argv[]) {
 			chanName.push_back(buf0);
 			cont_chan.cread(&buf0, sizeof(char));
 		}
-		cout << chanName;
 		FIFORequestChannel* new_chan = new FIFORequestChannel(chanName, FIFORequestChannel::CLIENT_SIDE);
-		cout << chanName;
 		channels.push_back(new_chan);
 	}
 	FIFORequestChannel chan = *(channels.back()); 
