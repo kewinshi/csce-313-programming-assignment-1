@@ -1,0 +1,18 @@
+1kb
+real    0m0.189s
+user    0m0.019s
+sys     0m0.016s
+
+1 mb
+real    0m0.386s
+user    0m0.029s
+sys     0m0.036s
+
+100 mb
+real    0m17.696s
+user    0m0.041s
+sys     0m0.222s
+
+Because the user and system time are significantly faster than the real time, I believe it indicates 
+that the majority of the time is spent on waiting to read or write from the channel between the client 
+and the server.
